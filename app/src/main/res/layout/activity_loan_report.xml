@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".LoanReportActivity">
 
+    <TextView
+        android:id="@+id/autoLoans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/autoLoanTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/carInfo"
         android:layout_width="wrap_content"
@@ -17,4 +28,71 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/carPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/carPrice"
+        app:layout_constraintEnd_toStartOf="@+id/autoLoans"
+        app:layout_constraintTop_toBottomOf="@+id/autoLoans" />
+
+    <TextView
+        android:id="@+id/downPayment"
+        android:layout_width="65dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="28dp"
+        android:text="@string/down_payment"
+        app:layout_constraintEnd_toStartOf="@+id/autoLoans"
+        app:layout_constraintTop_toBottomOf="@+id/carPrice" />
+
+    <TextView
+        android:id="@+id/tradeInValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/trade_in_value"
+        app:layout_constraintEnd_toEndOf="@+id/downPayment"
+        app:layout_constraintTop_toBottomOf="@+id/carPrice" />
+
+    <TextView
+        android:id="@+id/salesTax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="@string/sales_tax"
+        app:layout_constraintEnd_toEndOf="@+id/tradeInValue"
+        app:layout_constraintTop_toBottomOf="@+id/tradeInValue" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="352dp" />
+
+    <TextView
+        android:id="@+id/totalLoanAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:text="@string/total_loan_amount_fixed"
+        app:layout_constraintEnd_toEndOf="@+id/salesTax"
+        app:layout_constraintStart_toStartOf="@+id/salesTax"
+        app:layout_constraintTop_toBottomOf="@+id/salesTax" />
+
+    <TextView
+        android:id="@+id/totalInterestPaid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/total_interest_paid"
+        app:layout_constraintEnd_toEndOf="@+id/totalLoanAmount"
+        app:layout_constraintStart_toStartOf="@+id/totalLoanAmount"
+        app:layout_constraintTop_toBottomOf="@+id/totalLoanAmount" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
