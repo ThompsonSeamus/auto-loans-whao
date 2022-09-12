@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Auto Loans Whao</string>
+    <string name="price_of_car">Price of Car Here</string>
+    <string name="title">Car Loan Calculator</string>
+    <string name="loan_report">Loan Report</string>
+    <string name="car_info">To Car Info.</string>
+    <string name="down_payment">Down Payment</string>
+    <string name="trade_in_value">Trade In Value</string>
+    <string name="annual_percentage_rate">Annual Percentage Rate</string>
+    <string name="sales_tax">Sales Tax Rate</string>
+    <string name="thirtysix">36</string>
+    <string name="months">Months You Will Be Paying The Loan</string>
+    <string name="fourtyeight">48</string>
+    <string name="sixty">60</string>
+    <string name="seventytwo">72</string>
+</resources>
