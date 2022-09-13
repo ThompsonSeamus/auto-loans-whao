@@ -18,4 +18,5 @@
     <string name="total_loan_amount">"Total Loan Amount: "</string>
     <string name="total_loan_amount_fixed">Total Loan Amount:</string>
     <string name="total_interest_paid">Total Interest Paid</string>
+    <string name="downpayment">Down Payment:</string>
 </resources>

@@ -30,7 +30,9 @@
             android:id="@+id/tilCarPrice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/price_of_car" />
+            android:hint="@string/price_of_car"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -47,7 +49,9 @@
             android:id="@+id/tilDownPayment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/down_payment" />
+            android:hint="@string/down_payment"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -66,7 +70,9 @@
             android:id="@+id/tilTradeInValue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/trade_in_value" />
+            android:hint="@string/trade_in_value"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -130,7 +136,9 @@
             android:id="@+id/annualPercentageRate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/annual_percentage_rate" />
+            android:hint="@string/annual_percentage_rate"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -147,7 +155,9 @@
             android:id="@+id/tilSalesTaxRate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/sales_tax" />
+            android:hint="@string/sales_tax"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
