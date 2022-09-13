@@ -40,21 +40,10 @@
         app:layout_constraintTop_toBottomOf="@+id/autoLoans" />
 
     <TextView
-        android:id="@+id/downPayment"
-        android:layout_width="65dp"
-        android:layout_height="12dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="28dp"
-        android:text="@string/downpayment"
-        app:layout_constraintEnd_toStartOf="@+id/autoLoans"
-        app:layout_constraintTop_toBottomOf="@+id/carPrice" />
-
-    <TextView
         android:id="@+id/tradeInValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="124dp"
-        android:layout_marginEnd="4dp"
         android:text="@string/trade_in_value"
         app:layout_constraintEnd_toEndOf="@+id/downPayment"
         app:layout_constraintTop_toBottomOf="@+id/carPrice" />
@@ -89,10 +78,116 @@
         android:id="@+id/totalInterestPaid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="28dp"
         android:text="@string/total_interest_paid"
         app:layout_constraintEnd_toEndOf="@+id/totalLoanAmount"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/totalLoanAmount"
         app:layout_constraintTop_toBottomOf="@+id/totalLoanAmount" />
+
+    <TextView
+        android:id="@+id/downPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/downpayment"
+        app:layout_constraintEnd_toStartOf="@+id/autoLoans"
+        app:layout_constraintTop_toBottomOf="@+id/carPrice" />
+
+    <TextView
+        android:id="@+id/foundCarPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:text="@string/zero"
+        app:layout_constraintStart_toEndOf="@+id/carPrice"
+        app:layout_constraintTop_toTopOf="@+id/carPrice" />
+
+    <TextView
+        android:id="@+id/foundDownPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:text="@string/zero"
+        app:layout_constraintEnd_toEndOf="@+id/foundCarPrice"
+        app:layout_constraintStart_toEndOf="@+id/downPayment"
+        app:layout_constraintTop_toTopOf="@+id/downPayment" />
+
+    <TextView
+        android:id="@+id/foundTradeInValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:text="@string/zero"
+        app:layout_constraintEnd_toEndOf="@+id/foundDownPayment"
+        app:layout_constraintStart_toEndOf="@+id/tradeInValue"
+        app:layout_constraintTop_toTopOf="@+id/tradeInValue" />
+
+    <TextView
+        android:id="@+id/foundSalesTax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:text="@string/mod_zero"
+        app:layout_constraintEnd_toEndOf="@+id/foundTradeInValue"
+        app:layout_constraintStart_toEndOf="@+id/salesTax"
+        app:layout_constraintTop_toTopOf="@+id/salesTax" />
+
+    <TextView
+        android:id="@+id/foundTotalLoan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:text="@string/zero"
+        app:layout_constraintEnd_toEndOf="@+id/foundSalesTax"
+        app:layout_constraintStart_toEndOf="@+id/totalLoanAmount"
+        app:layout_constraintTop_toTopOf="@+id/totalLoanAmount" />
+
+    <TextView
+        android:id="@+id/foundTotalInterestPaid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:text="@string/zero"
+        app:layout_constraintEnd_toEndOf="@+id/foundTotalLoan"
+        app:layout_constraintStart_toEndOf="@+id/totalInterestPaid"
+        app:layout_constraintTop_toTopOf="@+id/totalInterestPaid" />
+
+    <TextView
+        android:id="@+id/textTotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/found_total_amount"
+        app:layout_constraintEnd_toEndOf="@+id/totalInterestPaid"
+        app:layout_constraintTop_toBottomOf="@+id/totalInterestPaid" />
+
+    <TextView
+        android:id="@+id/textMonthPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="@string/month_payment_text"
+        app:layout_constraintEnd_toEndOf="@+id/textTotalAmount"
+        app:layout_constraintTop_toBottomOf="@+id/textTotalAmount" />
+
+    <TextView
+        android:id="@+id/foundTotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:text="@string/zero"
+        app:layout_constraintStart_toEndOf="@+id/textTotalAmount"
+        app:layout_constraintTop_toTopOf="@+id/textTotalAmount" />
+
+    <TextView
+        android:id="@+id/foundMonthlyPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:text="@string/zero"
+        app:layout_constraintStart_toEndOf="@+id/textMonthPayment"
+        app:layout_constraintTop_toTopOf="@+id/textMonthPayment" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

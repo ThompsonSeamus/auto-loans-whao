@@ -32,7 +32,8 @@
             android:layout_height="wrap_content"
             android:hint="@string/price_of_car"
             android:imeOptions="actionNext"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            android:singleLine="true" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -51,7 +52,8 @@
             android:layout_height="wrap_content"
             android:hint="@string/down_payment"
             android:imeOptions="actionNext"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            android:singleLine="true" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -72,7 +74,8 @@
             android:layout_height="wrap_content"
             android:hint="@string/trade_in_value"
             android:imeOptions="actionNext"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            android:singleLine="true" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -138,7 +141,8 @@
             android:layout_height="wrap_content"
             android:hint="@string/annual_percentage_rate"
             android:imeOptions="actionNext"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            android:singleLine="true" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -157,7 +161,8 @@
             android:layout_height="wrap_content"
             android:hint="@string/sales_tax"
             android:imeOptions="actionDone"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            android:singleLine="true" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
