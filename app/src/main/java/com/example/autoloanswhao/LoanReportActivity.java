@@ -2,9 +2,12 @@ package com.example.autoloanswhao;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import java.util.Locale;
 
 public class LoanReportActivity extends AppCompatActivity {
 
@@ -24,8 +27,22 @@ public class LoanReportActivity extends AppCompatActivity {
         foundSalesTax = findViewById(R.id.foundSalesTax);
         foundTotalLoan = findViewById(R.id.foundTotalLoan);
         foundTotalInterestPaid = findViewById(R.id.foundTotalInterestPaid);
-        foundTotalAmount = findViewById(R.id.foundTotalLoan);
+        foundTotalAmount = findViewById(R.id.foundTotalAmount);
         foundMonthlyPayment = findViewById(R.id.foundMonthlyPayment);
+
+        getSupportActionBar().setTitle("Loan Report");
+
+        Intent intent = getIntent();
+        AutoLoan loan = intent.getParcelableExtra("loan0");
+
+        foundCarPrice.setText(String.format(Locale.US, "$%.2f", loan.getPrice()));
+        foundDownPayment.setText(String.format(Locale.US, "$%.2f", loan.getDownPayment()));
+        foundTradeInValue.setText(String.format(Locale.US, "$%.2f", loan.getTradeInValue()));
+        foundSalesTax.setText(String.format(Locale.US, "%%%.2f", loan.getSalesTax()));
+        foundTotalLoan.setText(String.format(Locale.US, "$%.2f", loan.getTotalLoan()));
+        foundTotalInterestPaid.setText(String.format(Locale.US, "$%.2f", loan.getTotalInterest()));
+        foundTotalAmount.setText(String.format(Locale.US, "$%.2f", loan.getTotalAmount()));
+        foundMonthlyPayment.setText(String.format(Locale.US, "$%.2f", loan.getMonthPayment()));
 
     }
 

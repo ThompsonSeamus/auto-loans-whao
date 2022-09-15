@@ -52,9 +52,15 @@ public class MainActivity extends AppCompatActivity {
             double annualPercentage = Double.valueOf(tilAnnualPercentage.getText().toString());
             double salesTaxRate = Double.valueOf(tilSalesTaxRate.getText().toString());
 
+            if(price <= downPayment || price <= tradeInValue){
+                Toast.makeText(this, "You've Paid For Your Car", Toast.LENGTH_SHORT).show();
+            }
+
             AutoLoan loan = new AutoLoan(price, downPayment, tradeInValue, length, annualPercentage, salesTaxRate);
 
+
             Intent intent = new Intent(this, LoanReportActivity.class);
+            intent.putExtra("loan0",loan);
             startActivity(intent);
         }
         catch (Exception e){
