@@ -41,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void goToLoanReport(View view){
 
-
         int termId = lengthOfLoanGroup.getCheckedRadioButtonId();
         RadioButton termButton = findViewById(termId);
         try{
@@ -52,16 +51,18 @@ public class MainActivity extends AppCompatActivity {
             double annualPercentage = Double.valueOf(tilAnnualPercentage.getText().toString());
             double salesTaxRate = Double.valueOf(tilSalesTaxRate.getText().toString());
 
-            if(price <= downPayment || price <= tradeInValue){
+            if((price > downPayment && price > tradeInValue) && price > downPayment + tradeInValue){
+
+                AutoLoan loan = new AutoLoan(price, downPayment, tradeInValue, length, annualPercentage, salesTaxRate);
+                Intent intent = new Intent(this, LoanReportActivity.class);
+                intent.putExtra("loan0",loan);
+                startActivity(intent);
+            }
+            else{
                 Toast.makeText(this, "You've Paid For Your Car", Toast.LENGTH_SHORT).show();
             }
 
-            AutoLoan loan = new AutoLoan(price, downPayment, tradeInValue, length, annualPercentage, salesTaxRate);
 
-
-            Intent intent = new Intent(this, LoanReportActivity.class);
-            intent.putExtra("loan0",loan);
-            startActivity(intent);
         }
         catch (Exception e){
             Toast.makeText(this, "Invalid Entry. RE-ATTEMPT PLEASE", Toast.LENGTH_SHORT).show();

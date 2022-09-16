@@ -10,7 +10,9 @@
         android:id="@+id/titleTop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="monospace"
         android:text="@string/title"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,10 +32,12 @@
             android:id="@+id/tilCarPrice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="monospace"
             android:hint="@string/price_of_car"
             android:imeOptions="actionNext"
             android:inputType="numberDecimal"
-            android:singleLine="true" />
+            android:singleLine="true"
+            android:textSize="16sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -50,10 +54,12 @@
             android:id="@+id/tilDownPayment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="monospace"
             android:hint="@string/down_payment"
             android:imeOptions="actionNext"
             android:inputType="numberDecimal"
-            android:singleLine="true" />
+            android:singleLine="true"
+            android:textSize="16sp" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -72,17 +78,21 @@
             android:id="@+id/tilTradeInValue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="monospace"
             android:hint="@string/trade_in_value"
             android:imeOptions="actionNext"
             android:inputType="numberDecimal"
-            android:singleLine="true" />
+            android:singleLine="true"
+            android:textSize="16sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/months"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="monospace"
         android:text="@string/months"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/lengthOfLoanGroup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -103,25 +113,33 @@
             android:id="@+id/thirtysix"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/thirtysix" />
+            android:fontFamily="monospace"
+            android:text="@string/thirtysix"
+            android:textSize="16sp" />
 
         <RadioButton
             android:id="@+id/fortyeight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/fourtyeight" />
+            android:fontFamily="monospace"
+            android:text="@string/fourtyeight"
+            android:textSize="16sp" />
 
         <RadioButton
             android:id="@+id/sixty"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/sixty" />
+            android:fontFamily="monospace"
+            android:text="@string/sixty"
+            android:textSize="16sp" />
 
         <RadioButton
             android:id="@+id/seventytwo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/seventytwo" />
+            android:fontFamily="monospace"
+            android:text="@string/seventytwo"
+            android:textSize="16sp" />
     </RadioGroup>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -139,10 +157,12 @@
             android:id="@+id/tilAnnualPercentageRate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="monospace"
             android:hint="@string/annual_percentage_rate"
             android:imeOptions="actionNext"
             android:inputType="numberDecimal"
-            android:singleLine="true" />
+            android:singleLine="true"
+            android:textSize="16sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -159,21 +179,35 @@
             android:id="@+id/tilSalesTaxRate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="monospace"
             android:hint="@string/sales_tax"
             android:imeOptions="actionDone"
             android:inputType="numberDecimal"
-            android:singleLine="true" />
+            android:singleLine="true"
+            android:textSize="16sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/loan_report"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="monospace"
         android:onClick="goToLoanReport"
         android:text="@string/loan_report"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lengthOfLoanGroup"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+        app:srcCompat="@drawable/carbetter" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
